@@ -1,87 +1,25 @@
 # KG-video
 
-## Fork
+## Introduction
 
-First time build the local repo
+This a project aimed at generating Knowledge Graph from video files. In general, it can be splitted into three parts: Speech Recognition, Face Recognition and Object Detection.
 
-```
-git clone https://github.com/YOUR_ID/YOUR_REPOSITORY.git
-```
+For Speech Recoginition, we use the demo from IFLYTEK Open Platform which depends on Bi-FSMN model. For Face Recoginition task, we use the face location techniques from GitHub project Face Recognition and IFLYTEK Open Platform. And for object detction, we choose to call TensorFlow Object Detection API.
 
-```
-git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
-```
+## File Description
 
-```
-git fetch upstream
-```
+/face --- Storing exsiting face files and personal profiles
 
-```
-git merge upstream/master
-```
+/font --- Storing Chinese font
 
-Update code
+/img --- Storing face files cacthed from video
 
-```
-git checkout master
-```
+addMusic.py --- Add mp3 file to the final output
 
-```
-git fetch upstream
-```
+demo.py --- Face recoginition API from IFLYTEK Open Platform
 
-```
-git merge updtream/master
-```
+facial.py --- Extract faces from the video and make the comparison
 
-```
-git checkout test
-```
+vocal.py --- Compare voice files using IFLYTECK Open Platform demo
 
-```
-git add .
-```
-
-```
-git commit -m "comment"
-```
-
-```
-git push -u origin test
-```
-
-```
-git checkout master
-```
-
-```
-git fetch upstream
-```
-
-```
-git merge updtream/master
-```
-
-```
-git pull origin master
-```
-
-```
-git merge test
-```
-
-```
-git status
-```
-
-```
-git add .
-```
-
-```
-git commit -m "comment"
-```
-
-```
-git push -u origin master
-```
+ 
